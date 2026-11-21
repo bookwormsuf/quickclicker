@@ -30,8 +30,8 @@ final class RemoteModel: NSObject, ObservableObject, WKNavigationDelegate {
             }
         }
         #if targetEnvironment(simulator)
-        // The simulator has no volume buttons. `xcrun simctl spawn booted notifyutil -p quickclick.next` stands in for one.
-        for (name, direction) in [("quickclick.next", 1), ("quickclick.previous", -1)] {
+        // The simulator has no volume buttons. `xcrun simctl spawn booted notifyutil -p quickclicker.next` stands in for one.
+        for (name, direction) in [("quickclicker.next", 1), ("quickclicker.previous", -1)] {
             CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), nil, { _, _, name, _, _ in
                 guard let name = name?.rawValue as String? else { return }
                 DispatchQueue.main.async { NotificationCenter.default.post(name: Notification.Name(name), object: nil) }

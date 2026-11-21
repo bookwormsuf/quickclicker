@@ -13,7 +13,7 @@ struct PairScreen: View {
         VStack(alignment: .leading, spacing: 0) {
             Spacer()
             Mark().fill(Theme.ink).frame(width: 46, height: 40)
-            Text("QuickClick").font(.system(size: 40, weight: .bold)).padding(.top, 24)
+            Text("QuickClicker").font(.system(size: 40, weight: .bold)).padding(.top, 24)
             Text("Move your slides with the volume buttons.").foregroundStyle(Theme.dim).padding(.top, 6)
             VStack(alignment: .leading, spacing: 16) {
                 step(1, "On the laptop, press Phone")

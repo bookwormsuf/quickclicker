@@ -7,50 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22F905186990ADD8F44DE066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93BEF77B169BA5BFBA72F43 /* Assets.xcassets */; };
-		303459C2367638CE779FF0E8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A251C1E1A332DAA8700199 /* Theme.swift */; };
-		43EBF68D6D8DF51F46364C27 /* VolumeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3E347E5D66CBBF08A01C0 /* VolumeButtons.swift */; };
-		B038F729D3E21CA4744556A8 /* RemoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FDDBBB6E4801176FD1486 /* RemoteScreen.swift */; };
-		C6A8087534916E69F3D155B9 /* ClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BB6B6196EF21033544A6B /* ClickerApp.swift */; };
-		D13ACAD6CE08613B37205D3A /* PairScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B963386E44A7E7ED837E0 /* PairScreen.swift */; };
+		78F14446C421C015BE5A7805 /* RemoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B240D38A90FDDAB8FE3F /* RemoteScreen.swift */; };
+		7D4FBA3BE643E7B69B6AD7B6 /* ClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44631F49E7BC3A4EF625EA8 /* ClickerApp.swift */; };
+		885BE466F2A7E4225AC3EBF6 /* PairScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C0C664C8C84C3D4AB42DC /* PairScreen.swift */; };
+		C4897BCE01DAA73D9BCC72D3 /* VolumeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC310DB56CA3E19D92B59A8 /* VolumeButtons.swift */; };
+		DBF62AB4095FA216E4734C6C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C96DA2F17428F9D65BC6FC /* Theme.swift */; };
+		DC9DC1A2EFB85237FCA8702E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199EE9FB7B3E07F37700F375 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28A93D007511C0AA6F35DF55 /* QuickClick.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = QuickClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F7B963386E44A7E7ED837E0 /* PairScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairScreen.swift; sourceTree = "<group>"; };
-		670BB6B6196EF21033544A6B /* ClickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerApp.swift; sourceTree = "<group>"; };
-		846FDDBBB6E4801176FD1486 /* RemoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteScreen.swift; sourceTree = "<group>"; };
-		A93BEF77B169BA5BFBA72F43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C8A251C1E1A332DAA8700199 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		F4A3E347E5D66CBBF08A01C0 /* VolumeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeButtons.swift; sourceTree = "<group>"; };
+		0EE2FCCA4CC23CA59CF5EA3D /* QuickClicker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = QuickClicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		199EE9FB7B3E07F37700F375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FC310DB56CA3E19D92B59A8 /* VolumeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeButtons.swift; sourceTree = "<group>"; };
+		7E1C0C664C8C84C3D4AB42DC /* PairScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairScreen.swift; sourceTree = "<group>"; };
+		9FA3B240D38A90FDDAB8FE3F /* RemoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteScreen.swift; sourceTree = "<group>"; };
+		D6C96DA2F17428F9D65BC6FC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E44631F49E7BC3A4EF625EA8 /* ClickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		203826C779DC31A2479106AC = {
+		7215734D2337A90079A42DF8 = {
 			isa = PBXGroup;
 			children = (
-				90EDBFF8F99B0843A516DF86 /* Sources */,
-				90D670558A006D44044F5FBF /* Products */,
+				CF5C362D43D6A56598D97757 /* Sources */,
+				7FA044A79939E93F45B8A01E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		90D670558A006D44044F5FBF /* Products */ = {
+		7FA044A79939E93F45B8A01E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28A93D007511C0AA6F35DF55 /* QuickClick.app */,
+				0EE2FCCA4CC23CA59CF5EA3D /* QuickClicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		90EDBFF8F99B0843A516DF86 /* Sources */ = {
+		CF5C362D43D6A56598D97757 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A93BEF77B169BA5BFBA72F43 /* Assets.xcassets */,
-				670BB6B6196EF21033544A6B /* ClickerApp.swift */,
-				4F7B963386E44A7E7ED837E0 /* PairScreen.swift */,
-				846FDDBBB6E4801176FD1486 /* RemoteScreen.swift */,
-				C8A251C1E1A332DAA8700199 /* Theme.swift */,
-				F4A3E347E5D66CBBF08A01C0 /* VolumeButtons.swift */,
+				199EE9FB7B3E07F37700F375 /* Assets.xcassets */,
+				E44631F49E7BC3A4EF625EA8 /* ClickerApp.swift */,
+				7E1C0C664C8C84C3D4AB42DC /* PairScreen.swift */,
+				9FA3B240D38A90FDDAB8FE3F /* RemoteScreen.swift */,
+				D6C96DA2F17428F9D65BC6FC /* Theme.swift */,
+				6FC310DB56CA3E19D92B59A8 /* VolumeButtons.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -58,96 +58,96 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8452DC2044FE0474D88B954B /* QuickClick */ = {
+		10199B88FB9A840E70D6BD2B /* QuickClicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 318FA3579D5AE66F2266F57E /* Build configuration list for PBXNativeTarget "QuickClick" */;
+			buildConfigurationList = ADC05592860F74C4890CB72D /* Build configuration list for PBXNativeTarget "QuickClicker" */;
 			buildPhases = (
-				55EC1084D61ECE0A3B328E96 /* Sources */,
-				4CEA7A15691076FFD25B16CA /* Resources */,
+				5CEB2731C317ECDE7B1E43F1 /* Sources */,
+				8488E9A167AD0589D7BF10B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = QuickClick;
+			name = QuickClicker;
 			packageProductDependencies = (
 			);
-			productName = QuickClick;
-			productReference = 28A93D007511C0AA6F35DF55 /* QuickClick.app */;
+			productName = QuickClicker;
+			productReference = 0EE2FCCA4CC23CA59CF5EA3D /* QuickClicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2FC374B5692FFAC054B58D1D /* Project object */ = {
+		E4512254AA4BDC366CD709F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					8452DC2044FE0474D88B954B = {
+					10199B88FB9A840E70D6BD2B = {
 						DevelopmentTeam = RBANALU6B9;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 7E5F06BD98C11D00236C5E1F /* Build configuration list for PBXProject "QuickClick" */;
+			buildConfigurationList = 86D4A47592D0F72BFB8CB0E4 /* Build configuration list for PBXProject "QuickClicker" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = 203826C779DC31A2479106AC;
+			mainGroup = 7215734D2337A90079A42DF8;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 90D670558A006D44044F5FBF /* Products */;
+			productRefGroup = 7FA044A79939E93F45B8A01E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8452DC2044FE0474D88B954B /* QuickClick */,
+				10199B88FB9A840E70D6BD2B /* QuickClicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4CEA7A15691076FFD25B16CA /* Resources */ = {
+		8488E9A167AD0589D7BF10B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F905186990ADD8F44DE066 /* Assets.xcassets in Resources */,
+				DC9DC1A2EFB85237FCA8702E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		55EC1084D61ECE0A3B328E96 /* Sources */ = {
+		5CEB2731C317ECDE7B1E43F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A8087534916E69F3D155B9 /* ClickerApp.swift in Sources */,
-				D13ACAD6CE08613B37205D3A /* PairScreen.swift in Sources */,
-				B038F729D3E21CA4744556A8 /* RemoteScreen.swift in Sources */,
-				303459C2367638CE779FF0E8 /* Theme.swift in Sources */,
-				43EBF68D6D8DF51F46364C27 /* VolumeButtons.swift in Sources */,
+				7D4FBA3BE643E7B69B6AD7B6 /* ClickerApp.swift in Sources */,
+				885BE466F2A7E4225AC3EBF6 /* PairScreen.swift in Sources */,
+				78F14446C421C015BE5A7805 /* RemoteScreen.swift in Sources */,
+				DBF62AB4095FA216E4734C6C /* Theme.swift in Sources */,
+				C4897BCE01DAA73D9BCC72D3 /* VolumeButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0CDA8B1684FDFA5D8440C643 /* Release */ = {
+		4D895530D63CF47C0DC27CA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = RBANALU6B9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = QuickClick;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickClicker;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Scans the pairing code on your laptop.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -162,9 +162,65 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
+			name = Debug;
+		};
+		61300548C74E6674E8125907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
 			name = Release;
 		};
-		9679D35E91C2E4D903DEA709 /* Debug */ = {
+		74874A8BAE3A4AEF8CC30B8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,17 +283,17 @@
 			};
 			name = Debug;
 		};
-		B355924C97C8B0ADFD007934 /* Debug */ = {
+		CE345C14F9A0782D1E3CFAB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = RBANALU6B9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = QuickClick;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickClicker;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Scans the pairing code on your laptop.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -252,86 +308,30 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
-		};
-		B8207438F23653BCEE92924E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		318FA3579D5AE66F2266F57E /* Build configuration list for PBXNativeTarget "QuickClick" */ = {
+		86D4A47592D0F72BFB8CB0E4 /* Build configuration list for PBXProject "QuickClicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B355924C97C8B0ADFD007934 /* Debug */,
-				0CDA8B1684FDFA5D8440C643 /* Release */,
+				74874A8BAE3A4AEF8CC30B8F /* Debug */,
+				61300548C74E6674E8125907 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7E5F06BD98C11D00236C5E1F /* Build configuration list for PBXProject "QuickClick" */ = {
+		ADC05592860F74C4890CB72D /* Build configuration list for PBXNativeTarget "QuickClicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9679D35E91C2E4D903DEA709 /* Debug */,
-				B8207438F23653BCEE92924E /* Release */,
+				4D895530D63CF47C0DC27CA7 /* Debug */,
+				CE345C14F9A0782D1E3CFAB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2FC374B5692FFAC054B58D1D /* Project object */;
+	rootObject = E4512254AA4BDC366CD709F1 /* Project object */;
 }

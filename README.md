@@ -1,4 +1,4 @@
-# QuickClick
+# QuickClicker
 
 An iPhone app that moves the Friends of Figma talk slides with the volume buttons.
 It opens the talk's phone remote page and presses its Next and Previous buttons for you.
@@ -14,12 +14,12 @@ This is the companion clicker for the Friends of Figma talk deck: https://github
 
 It only works with the deployed deck at friends-of-figma-talk.vercel.app. The host is hard-coded in `Sources/ClickerApp.swift`.
 
-To build it yourself you need your own Apple team ID and bundle ID. They are set in `project.yml` (`DEVELOPMENT_TEAM`, `PRODUCT_BUNDLE_IDENTIFIER`), in `QuickClick.xcodeproj/project.pbxproj` and, for the team ID, in `ExportOptions.plist`.
+To build it yourself you need your own Apple team ID and bundle ID. They are set in `project.yml` (`DEVELOPMENT_TEAM`, `PRODUCT_BUNDLE_IDENTIFIER`), in `QuickClicker.xcodeproj/project.pbxproj` and, for the team ID, in `ExportOptions.plist`.
 
 ## Install on your phone
 
-1. Open `QuickClick.xcodeproj` in Xcode.
-2. Click the QuickClick target, then Signing & Capabilities, and pick your team.
+1. Open `QuickClicker.xcodeproj` in Xcode.
+2. Click the QuickClicker target, then Signing & Capabilities, and pick your team.
 3. Plug in the phone, choose it at the top, press Run.
 
 `project.yml` is the source for the Xcode project. After changing it, run `xcodegen generate`.
