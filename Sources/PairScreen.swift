@@ -114,14 +114,16 @@ struct ScanSheet: View {
     }
 }
 
-/// Four corner marks.
+/// Four rounded corner marks.
 struct Brackets: Shape {
     func path(in rect: CGRect) -> Path {
-        let arm = rect.width * 0.22
+        let arm = rect.width * 0.24
+        let radius = rect.width * 0.12
         var path = Path()
         for (x, y, dx, dy) in [(rect.minX, rect.minY, 1.0, 1.0), (rect.maxX, rect.minY, -1.0, 1.0), (rect.maxX, rect.maxY, -1.0, -1.0), (rect.minX, rect.maxY, 1.0, -1.0)] {
             path.move(to: CGPoint(x: x + arm * dx, y: y))
-            path.addLine(to: CGPoint(x: x, y: y))
+            path.addLine(to: CGPoint(x: x + radius * dx, y: y))
+            path.addQuadCurve(to: CGPoint(x: x, y: y + radius * dy), control: CGPoint(x: x, y: y))
             path.addLine(to: CGPoint(x: x, y: y + arm * dy))
         }
         return path
