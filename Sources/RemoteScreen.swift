@@ -30,8 +30,8 @@ final class RemoteModel: NSObject, ObservableObject, WKNavigationDelegate {
             }
         }
         #if targetEnvironment(simulator)
-        // The simulator has no volume buttons. `xcrun simctl spawn booted notifyutil -p fof.next` stands in for one.
-        for (name, direction) in [("fof.next", 1), ("fof.previous", -1)] {
+        // The simulator has no volume buttons. `xcrun simctl spawn booted notifyutil -p quickclick.next` stands in for one.
+        for (name, direction) in [("quickclick.next", 1), ("quickclick.previous", -1)] {
             CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), nil, { _, _, name, _, _ in
                 guard let name = name?.rawValue as String? else { return }
                 DispatchQueue.main.async { NotificationCenter.default.post(name: Notification.Name(name), object: nil) }
@@ -94,22 +94,24 @@ struct RemoteScreen: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Button("Unpair", role: .destructive, action: unpair)
+                Button("Unpair", action: unpair).foregroundStyle(Theme.warning)
                 Spacer()
                 Button("Reload") { model.reload() }
                 Spacer()
-                Button("Pocket mode") { pocket = true }.buttonStyle(.borderedProminent)
+                Button("Pocket mode") { pocket = true }.buttonStyle(MainButtonStyle())
             }
-            .padding(.horizontal, 16).padding(.vertical, 8)
+            .padding(.horizontal, 20).padding(.vertical, 10)
             if model.failed {
-                Text("The page did not load. Check the connection, then press Reload.").font(.footnote).foregroundStyle(.red).padding(.bottom, 8)
+                Text("The page did not load. Check the connection, then press Reload.").font(.footnote).foregroundStyle(Theme.warning).padding(.horizontal, 20).padding(.bottom, 8)
             }
             if model.lockedOut {
                 Text("Another phone paired first. On the laptop, press Phone, then New code. Then tap Unpair here and scan the new code.")
-                    .font(.footnote).foregroundStyle(.orange).padding(.horizontal, 16).padding(.bottom, 8)
+                    .font(.footnote).foregroundStyle(Theme.warning).padding(.horizontal, 20).padding(.bottom, 8)
             }
             RemotePage(model: model)
         }
+        .tint(Theme.ink)
+        .background(Theme.ground.ignoresSafeArea())
         .overlay { if pocket { pocketCover } }
         .statusBarHidden(pocket)
         .persistentSystemOverlays(pocket ? .hidden : .automatic)
@@ -125,6 +127,7 @@ struct RemoteScreen: View {
         Color.black.ignoresSafeArea()
             .overlay {
                 VStack(spacing: 10) {
+                    Mark().fill(Color(white: 0.3)).frame(width: 30, height: 26).padding(.bottom, 8)
                     Text("Pocket mode")
                     Text("Volume up: next\nVolume down: previous").multilineTextAlignment(.center)
                     Text("Hold anywhere for one second to exit")

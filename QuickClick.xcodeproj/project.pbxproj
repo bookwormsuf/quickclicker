@@ -7,143 +7,147 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E4A692A97A27E2C315D12A /* VolumeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D7702616A32BDD6A274E8 /* VolumeButtons.swift */; };
-		1A4E4EE9C214BD76F0C1B002 /* PairScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B7AE52C25CF994010CED20 /* PairScreen.swift */; };
-		748B407F76DDC93EA117A6A7 /* RemoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5136E360204C77318A9F2 /* RemoteScreen.swift */; };
-		9AB095AD1AB906FC1942AF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A548DB797BBD6A4F354E66 /* Assets.xcassets */; };
-		ABB7ECD7BBE08B2444F6E019 /* ClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D8A1B7143BD7D63D3EEFF0 /* ClickerApp.swift */; };
+		22F905186990ADD8F44DE066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93BEF77B169BA5BFBA72F43 /* Assets.xcassets */; };
+		303459C2367638CE779FF0E8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A251C1E1A332DAA8700199 /* Theme.swift */; };
+		43EBF68D6D8DF51F46364C27 /* VolumeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3E347E5D66CBBF08A01C0 /* VolumeButtons.swift */; };
+		B038F729D3E21CA4744556A8 /* RemoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FDDBBB6E4801176FD1486 /* RemoteScreen.swift */; };
+		C6A8087534916E69F3D155B9 /* ClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BB6B6196EF21033544A6B /* ClickerApp.swift */; };
+		D13ACAD6CE08613B37205D3A /* PairScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B963386E44A7E7ED837E0 /* PairScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		170D7702616A32BDD6A274E8 /* VolumeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeButtons.swift; sourceTree = "<group>"; };
-		29B5136E360204C77318A9F2 /* RemoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteScreen.swift; sourceTree = "<group>"; };
-		45D8A1B7143BD7D63D3EEFF0 /* ClickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerApp.swift; sourceTree = "<group>"; };
-		B6B7AE52C25CF994010CED20 /* PairScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairScreen.swift; sourceTree = "<group>"; };
-		E66F6DFB7D7C2B91AB604879 /* FoFClicker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FoFClicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7A548DB797BBD6A4F354E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28A93D007511C0AA6F35DF55 /* QuickClick.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = QuickClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7B963386E44A7E7ED837E0 /* PairScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairScreen.swift; sourceTree = "<group>"; };
+		670BB6B6196EF21033544A6B /* ClickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerApp.swift; sourceTree = "<group>"; };
+		846FDDBBB6E4801176FD1486 /* RemoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteScreen.swift; sourceTree = "<group>"; };
+		A93BEF77B169BA5BFBA72F43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8A251C1E1A332DAA8700199 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F4A3E347E5D66CBBF08A01C0 /* VolumeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		3004F7EF69A93820A3B76A95 = {
+		203826C779DC31A2479106AC = {
 			isa = PBXGroup;
 			children = (
-				945E8AD9DD502F15CFC87C41 /* Sources */,
-				A595A6C877C8D2BC346F6DE2 /* Products */,
+				90EDBFF8F99B0843A516DF86 /* Sources */,
+				90D670558A006D44044F5FBF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		945E8AD9DD502F15CFC87C41 /* Sources */ = {
+		90D670558A006D44044F5FBF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7A548DB797BBD6A4F354E66 /* Assets.xcassets */,
-				45D8A1B7143BD7D63D3EEFF0 /* ClickerApp.swift */,
-				B6B7AE52C25CF994010CED20 /* PairScreen.swift */,
-				29B5136E360204C77318A9F2 /* RemoteScreen.swift */,
-				170D7702616A32BDD6A274E8 /* VolumeButtons.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		A595A6C877C8D2BC346F6DE2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E66F6DFB7D7C2B91AB604879 /* FoFClicker.app */,
+				28A93D007511C0AA6F35DF55 /* QuickClick.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		90EDBFF8F99B0843A516DF86 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A93BEF77B169BA5BFBA72F43 /* Assets.xcassets */,
+				670BB6B6196EF21033544A6B /* ClickerApp.swift */,
+				4F7B963386E44A7E7ED837E0 /* PairScreen.swift */,
+				846FDDBBB6E4801176FD1486 /* RemoteScreen.swift */,
+				C8A251C1E1A332DAA8700199 /* Theme.swift */,
+				F4A3E347E5D66CBBF08A01C0 /* VolumeButtons.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6CB1535DF8B80F4E8BC1419E /* FoFClicker */ = {
+		8452DC2044FE0474D88B954B /* QuickClick */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D41957897666B529AE7678B /* Build configuration list for PBXNativeTarget "FoFClicker" */;
+			buildConfigurationList = 318FA3579D5AE66F2266F57E /* Build configuration list for PBXNativeTarget "QuickClick" */;
 			buildPhases = (
-				09358FDFC4A248C0F4DCDA4C /* Sources */,
-				E4E42E32320AD25BAB86AEB4 /* Resources */,
+				55EC1084D61ECE0A3B328E96 /* Sources */,
+				4CEA7A15691076FFD25B16CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FoFClicker;
+			name = QuickClick;
 			packageProductDependencies = (
 			);
-			productName = FoFClicker;
-			productReference = E66F6DFB7D7C2B91AB604879 /* FoFClicker.app */;
+			productName = QuickClick;
+			productReference = 28A93D007511C0AA6F35DF55 /* QuickClick.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C278EC7A72EFF8C4428523E9 /* Project object */ = {
+		2FC374B5692FFAC054B58D1D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					6CB1535DF8B80F4E8BC1419E = {
+					8452DC2044FE0474D88B954B = {
 						DevelopmentTeam = RBANALU6B9;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 223626194181727DA7923EDF /* Build configuration list for PBXProject "FoFClicker" */;
+			buildConfigurationList = 7E5F06BD98C11D00236C5E1F /* Build configuration list for PBXProject "QuickClick" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = 3004F7EF69A93820A3B76A95;
+			mainGroup = 203826C779DC31A2479106AC;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = A595A6C877C8D2BC346F6DE2 /* Products */;
+			productRefGroup = 90D670558A006D44044F5FBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6CB1535DF8B80F4E8BC1419E /* FoFClicker */,
+				8452DC2044FE0474D88B954B /* QuickClick */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E4E42E32320AD25BAB86AEB4 /* Resources */ = {
+		4CEA7A15691076FFD25B16CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB095AD1AB906FC1942AF9D /* Assets.xcassets in Resources */,
+				22F905186990ADD8F44DE066 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		09358FDFC4A248C0F4DCDA4C /* Sources */ = {
+		55EC1084D61ECE0A3B328E96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB7ECD7BBE08B2444F6E019 /* ClickerApp.swift in Sources */,
-				1A4E4EE9C214BD76F0C1B002 /* PairScreen.swift in Sources */,
-				748B407F76DDC93EA117A6A7 /* RemoteScreen.swift in Sources */,
-				00E4A692A97A27E2C315D12A /* VolumeButtons.swift in Sources */,
+				C6A8087534916E69F3D155B9 /* ClickerApp.swift in Sources */,
+				D13ACAD6CE08613B37205D3A /* PairScreen.swift in Sources */,
+				B038F729D3E21CA4744556A8 /* RemoteScreen.swift in Sources */,
+				303459C2367638CE779FF0E8 /* Theme.swift in Sources */,
+				43EBF68D6D8DF51F46364C27 /* VolumeButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		26F95BED4E90AD02E0F66377 /* Debug */ = {
+		0CDA8B1684FDFA5D8440C643 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = RBANALU6B9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "FoF Clicker";
+				INFOPLIST_KEY_CFBundleDisplayName = QuickClick;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Scans the pairing code on your laptop.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -158,9 +162,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = Release;
 		};
-		6A02B8A7729AE32F5A23016A /* Debug */ = {
+		9679D35E91C2E4D903DEA709 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +227,34 @@
 			};
 			name = Debug;
 		};
-		C0E828A7D89982F3BF571F72 /* Release */ = {
+		B355924C97C8B0ADFD007934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = RBANALU6B9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickClick;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scans the pairing code on your laptop.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookwormsuf.fofclicker;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B8207438F23653BCEE92924E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,55 +310,28 @@
 			};
 			name = Release;
 		};
-		FBD0D2E2E5C2F9776F235166 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = RBANALU6B9;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "FoF Clicker";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Scans the pairing code on your laptop.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bookwormsuf.fofclicker;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D41957897666B529AE7678B /* Build configuration list for PBXNativeTarget "FoFClicker" */ = {
+		318FA3579D5AE66F2266F57E /* Build configuration list for PBXNativeTarget "QuickClick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26F95BED4E90AD02E0F66377 /* Debug */,
-				FBD0D2E2E5C2F9776F235166 /* Release */,
+				B355924C97C8B0ADFD007934 /* Debug */,
+				0CDA8B1684FDFA5D8440C643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		223626194181727DA7923EDF /* Build configuration list for PBXProject "FoFClicker" */ = {
+		7E5F06BD98C11D00236C5E1F /* Build configuration list for PBXProject "QuickClick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A02B8A7729AE32F5A23016A /* Debug */,
-				C0E828A7D89982F3BF571F72 /* Release */,
+				9679D35E91C2E4D903DEA709 /* Debug */,
+				B8207438F23653BCEE92924E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C278EC7A72EFF8C4428523E9 /* Project object */;
+	rootObject = 2FC374B5692FFAC054B58D1D /* Project object */;
 }
