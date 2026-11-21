@@ -5,6 +5,7 @@ import VisionKit
 struct PairScreen: View {
     var pair: (URL) -> Void
     @State private var scanning = false
+    @State private var scanProblem = ""
     @State private var pasted = ""
     @State private var problem = ""
 
@@ -42,12 +43,16 @@ struct PairScreen: View {
         .padding(.horizontal, 28).padding(.bottom, 12)
         .background(Theme.ground.ignoresSafeArea())
         .sheet(isPresented: $scanning) {
-            if DataScannerViewController.isSupported && DataScannerViewController.isAvailable {
-                Scanner { text in scanning = false; use(text) }.ignoresSafeArea()
-            } else {
-                Text("The camera is not available. Allow camera access in Settings, or paste the link.").padding()
-            }
+            // A wrong code keeps the scanner open and says so there, so the next scan can follow straight away.
+            ScanSheet(problem: scanProblem, found: { text in
+                if let url = remoteURL(text) { scanning = false; pair(url) } else { scanProblem = "That is not a pairing code" }
+            }, close: { scanning = false })
+            .onAppear { scanProblem = "" }
         }
+        #if targetEnvironment(simulator)
+        // The simulator cannot be tapped from a script. Launching with `-scan YES` opens the sheet for a screenshot.
+        .onAppear { if UserDefaults.standard.bool(forKey: "scan") { scanning = true } }
+        #endif
     }
 
     private func step(_ number: Int, _ text: String) -> some View {
@@ -60,6 +65,66 @@ struct PairScreen: View {
 
     private func use(_ text: String) {
         if let url = remoteURL(text) { pair(url) } else { problem = "That is not a pairing link for this deck." }
+    }
+}
+
+/// The scanner sheet: the camera, a close button, a frame to aim at and instructions on a dark panel.
+struct ScanSheet: View {
+    var problem: String
+    var found: (String) -> Void
+    var close: () -> Void
+    private var cameraWorks: Bool { DataScannerViewController.isSupported && DataScannerViewController.isAvailable }
+
+    var body: some View {
+        ZStack {
+            if cameraWorks { Scanner(found: found) } else { Theme.ground }
+            // Only a guide for where to point. A code is read anywhere in view.
+            Brackets().stroke(.white.opacity(cameraWorks ? 0.95 : 0.25), style: StrokeStyle(lineWidth: 4, lineCap: .round, lineJoin: .round))
+                .frame(width: 230, height: 230)
+        }
+        .ignoresSafeArea()
+        .overlay(alignment: .topTrailing) {
+            Button(action: close) {
+                Image(systemName: "xmark").font(.system(size: 15, weight: .bold)).foregroundStyle(.white)
+                    .frame(width: 38, height: 38).background(.black.opacity(0.6), in: Circle())
+            }
+            .accessibilityLabel("Close").padding(16)
+        }
+        .overlay(alignment: .bottom) {
+            VStack(spacing: 6) {
+                Text(title).font(.headline).foregroundStyle(problem.isEmpty || !cameraWorks ? .white : Theme.warning)
+                Text(detail).font(.subheadline).foregroundStyle(.white.opacity(0.7))
+            }
+            .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity).padding(.vertical, 18).padding(.horizontal, 20)
+            // Dark backing, so the words stay readable over a bright laptop screen.
+            .background(.black.opacity(0.72), in: RoundedRectangle(cornerRadius: 20))
+            .padding(.horizontal, 16).padding(.bottom, 12)
+        }
+    }
+
+    private var title: String {
+        if !cameraWorks { return "The camera is not available" }
+        return problem.isEmpty ? "Scan the QR code on your laptop" : problem
+    }
+
+    private var detail: String {
+        if !cameraWorks { return "Allow camera access in Settings, or close this and paste the link." }
+        return problem.isEmpty ? "Press Phone, then New code, to show it" : "Press Phone, then New code, for a fresh one"
+    }
+}
+
+/// Four corner marks.
+struct Brackets: Shape {
+    func path(in rect: CGRect) -> Path {
+        let arm = rect.width * 0.22
+        var path = Path()
+        for (x, y, dx, dy) in [(rect.minX, rect.minY, 1.0, 1.0), (rect.maxX, rect.minY, -1.0, 1.0), (rect.maxX, rect.maxY, -1.0, -1.0), (rect.minX, rect.maxY, 1.0, -1.0)] {
+            path.move(to: CGPoint(x: x + arm * dx, y: y))
+            path.addLine(to: CGPoint(x: x, y: y))
+            path.addLine(to: CGPoint(x: x, y: y + arm * dy))
+        }
+        return path
     }
 }
 
